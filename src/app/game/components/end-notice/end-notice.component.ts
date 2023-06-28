@@ -24,7 +24,7 @@ export class EndNoticeComponent {
   ref = inject(DialogRef<GameStatus | null>);
 
   get score() {
-    return this.data.score.join(' - ');
+    return this.data.score.sort((a, b) => b - a).join(' - ');
   }
 
   goToSettings() {
