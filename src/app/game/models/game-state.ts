@@ -19,7 +19,7 @@ export interface GameState {
 }
 
 export const initialState: GameState = {
-  timeToReact: 200,
+  timeToReact: 1000,
   status: 'settings',
   board: {
     cells: [],

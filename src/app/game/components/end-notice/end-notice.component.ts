@@ -4,7 +4,7 @@ import { CardComponent } from 'ui/card/card.component';
 import { DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
 import { Player } from 'board/player';
 import { ButtonComponent } from 'ui/button/button.component';
-import { GameStatus } from '../../types/game-state';
+import { GameStatus } from '../../models/game-state';
 
 interface ModalData {
   winner: NonNullable<Player>;

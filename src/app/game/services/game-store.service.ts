@@ -22,7 +22,7 @@ import {
   GameStatus,
   getBoardState,
   initialState,
-} from '../types/game-state';
+} from '../models/game-state';
 
 import { EndNoticeComponent } from '../components/end-notice/end-notice.component';
 

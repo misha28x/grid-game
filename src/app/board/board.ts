@@ -56,9 +56,10 @@ export class Board {
   }
 
   private contestCell() {
-    const idx = Math.floor(Math.random() * this.index.length);
+    const cellIdx = this.index.pop();
 
-    const cellIdx = this.index[idx];
+    if (cellIdx == null) return;
+
     const cell = this.cells[cellIdx];
 
     if (cell != null) {
@@ -76,6 +77,18 @@ export class Board {
   }
 
   private buildIndex() {
-    this.index = this.cells.map((cell) => cell.id);
+    const ids = this.cells.map((cell) => cell.id);
+    const indexSize = SCORE_TO_WIN + SCORE_TO_WIN;
+    const result = [];
+
+    for (let i = 0; i < indexSize; i++) {
+      const idx = Math.floor(Math.random() * ids.length);
+      const id = ids[idx];
+
+      result.push(id);
+      ids.splice(idx, 1);
+    }
+
+    this.index = result;
   }
 }

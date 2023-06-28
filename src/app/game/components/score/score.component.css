@@ -1,6 +1,6 @@
 :host {
   --score-size: 240px;
-  --timer-size: clamp(120px, 50%, 160px);
+  --timer-size: clamp(160px, 50%, 200px);
 
   display: grid;
   grid-template-columns: 1fr var(--timer-size) 1fr;
