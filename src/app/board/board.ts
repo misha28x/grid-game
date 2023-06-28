@@ -50,8 +50,6 @@ export class Board {
       return;
     }
 
-    const idx = this.index.indexOf(this.contestedCellIdx);
-    this.index.splice(idx, 1);
     this.contestCell();
   }
 
@@ -88,7 +86,7 @@ export class Board {
       result.push(id);
       ids.splice(idx, 1);
     }
-
+    console.log(result);
     this.index = result;
   }
 }
