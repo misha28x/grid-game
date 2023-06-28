@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "grid-game",
+      "public": "dist/grid-game",
+      "frameworksBackend": {}
+    }
+  ]
+}

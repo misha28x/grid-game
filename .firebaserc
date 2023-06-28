@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "grid-game-6eba3": {
+      "hosting": {
+        "grid-game": [
+          "grid-game-6eba3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "grid-game-6eba3"
+  }
+}
