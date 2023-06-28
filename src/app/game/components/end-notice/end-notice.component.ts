@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from 'ui/card/card.component';
 import { DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
-import { Player } from '../../../board/player';
+import { Player } from 'board/player';
 import { ButtonComponent } from 'ui/button/button.component';
 import { GameStatus } from '../../types/game-state';
 

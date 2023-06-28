@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BoardComponent } from './components/board/board.component';
 import { ScoreComponent } from './components/score/score.component';
 import { SettingsComponent } from './components/settings/settings.component';
-import { createFadeAnimation } from '../shared/animations/fade-in-out';
+import { createFadeAnimation } from 'shared/animations/fade-in-out';
 import { GameStore } from './services/game-store.service';
 
 @Component({

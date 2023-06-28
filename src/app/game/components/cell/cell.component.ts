@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { Cell } from '../../../board/cell';
+import { Cell } from 'board/cell';
 
 @Component({
   selector: 'app-cell',

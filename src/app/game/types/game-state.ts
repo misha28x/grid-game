@@ -1,6 +1,6 @@
-import { Cell } from '../../board/cell';
-import { Player, Score } from '../../board/player';
-import { Board } from '../../board/board';
+import { Cell } from 'board/cell';
+import { Board } from 'board/board';
+import { Player, Score } from 'board/player';
 
 export type GameStatus = 'settings' | 'play' | 'ended';
 

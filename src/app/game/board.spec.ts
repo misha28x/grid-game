@@ -1,5 +1,5 @@
 import { Board } from './board';
-import { Player, players } from './player';
+import { Player, players } from 'board/player';
 
 describe('Board', () => {
   it('should create an instance', () => {

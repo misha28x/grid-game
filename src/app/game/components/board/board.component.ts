@@ -6,7 +6,8 @@ import {
   Output,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Cell } from '../../../board/cell';
+import { Cell } from 'board/cell';
+
 import { CellComponent } from '../cell/cell.component';
 
 @Component({
