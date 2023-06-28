@@ -14,7 +14,6 @@ describe('Board', () => {
   it('should choose cell to contest', () => {
     const board = new Board();
 
-    console.log(board.contestedCellIdx);
     expect(board.contestedCellIdx).not.toBeNull();
   });
 
