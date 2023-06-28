@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+:host {
+  --black: rgb(0, 0, 0);
+  --red: rgb(253, 102, 135);
+  --white: rgb(255, 255, 255);
+  --yellow: rgb(255, 206, 103);
+  --blue: rgba(119, 119, 242, 1);
+  --green: rgb(0, 170, 80);
+
+  --text-color: var(--black);
+  --primary: var(--blue);
+  --accent: var(--yellow);
+
+  --main-ff: "Bowlby";
+  --main-fz: 1.5rem;
+  --l-fz: 2rem;
+  --xl-fz: 3rem;
+
+  --spasing-xs: 0.625rem;
+  --spasing-s: 1rem;
+  --spacing: 1.5rem;
+
+  --border-width: 4px;
+  --border-color: var(--black);
+
+  --control-border: var(--border-width) solid var(--border-color);
+}
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--main-ff);
+  font-size: var(--main-fz);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Bowlby";
+  font-weight: 300 700;
+  font-stretch: 20% 100%;
+  src: url("/assets/fonts/BowlbyOne-Regular.ttf") format("truetype");
+}
