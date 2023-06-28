@@ -13,11 +13,12 @@ html {
   --main-ff: "Bowlby";
   --main-fz: 1.5rem;
   --l-fz: 2rem;
-  --xl-fz: 3rem;
+  --xl-fz: 2.5rem;
 
   --spasing-xs: 0.625rem;
   --spasing-s: 1rem;
   --spacing: 1.5rem;
+  --spacing-l: 2rem;
 
   --shape: 0.75rem;
 
@@ -27,6 +28,10 @@ html {
   --control-border: var(--border-width) solid var(--border-color);
 }
 
+html,
+body {
+  height: 100%;
+}
 
 html {
   font-size: 16px;
