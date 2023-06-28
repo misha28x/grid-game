@@ -1,6 +1,13 @@
 :host {
-  padding: 100px 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  --bg-color: #b9eff9;
+  --dot-color: var(--blue);
+  --dot-space: 2rem;
+
+  display: grid;
+  place-items: center;
+  height: 100%;
+
+  background: var(--bg-color);
+  background-image: radial-gradient(var(--dot-color) 1px, transparent 0);
+  background-size: var(--dot-space) var(--dot-space);
 }
