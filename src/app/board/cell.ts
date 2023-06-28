@@ -5,7 +5,6 @@ export interface Cell {
   row: number;
   col: number;
   occupation: Occupation;
-  isContested: boolean;
 }
 
 export function createCell(row: number, col: number, id: number): Cell {
@@ -14,6 +13,5 @@ export function createCell(row: number, col: number, id: number): Cell {
     row,
     col,
     occupation: occupations.None,
-    isContested: false,
   };
 }

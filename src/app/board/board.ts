@@ -1,5 +1,5 @@
 import { Cell, createCell } from './cell';
-import { Player, createScore, players } from './player';
+import { createScore, Player, players } from './player';
 
 const BOARD_SIZE = 10;
 const SCORE_TO_WIN = 10;
@@ -32,17 +32,23 @@ export class Board {
   constructor(size: number = BOARD_SIZE) {
     this.createBoard(size);
     this.buildIndex();
+  }
+
+  start() {
     this.contestCell();
   }
 
   occupyCell(player: Player) {
-    if (!this.contestedCellIdx) return;
+    if (this.contestedCellIdx == null) return;
 
     const cell = this.cells[this.contestedCellIdx];
     cell.occupation = player;
     this._score[player]++;
 
-    if (this.ended) return;
+    if (this.ended) {
+      this.contestedCellIdx = null;
+      return;
+    }
 
     const idx = this.index.indexOf(this.contestedCellIdx);
     this.index.splice(idx, 1);
@@ -56,7 +62,6 @@ export class Board {
     const cell = this.cells[cellIdx];
 
     if (cell != null) {
-      cell.isContested = true;
       this.contestedCellIdx = cellIdx;
     }
   }
