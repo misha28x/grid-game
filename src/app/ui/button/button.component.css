@@ -1,0 +1,24 @@
+:host {
+  --bg: var(--yellow);
+  --color: var(--black);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+
+  font-family: inherit;
+  background: var(--bg);
+  color: var(--color);
+  font-size: var(--main-fz);
+
+  padding: var(--spasing-xs) var(--spacing);
+  border-radius: var(--shape);
+  border: var(--control-border);
+  width: 100%;
+  cursor: pointer;
+}
+
+:host.app-button-red {
+  --bg: var(--red)
+}
