@@ -1,0 +1,25 @@
+:host {
+  --bg: var(--blue);
+
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--bg);
+  border: var(--control-border);
+  border-radius: var(--shape);
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out background-color;
+}
+
+:host.contested {
+  --bg: var(--yellow);
+}
+
+:host.player {
+  --bg: var(--green);
+}
+
+:host.computer {
+  --bg: var(--red);
+}

@@ -1,0 +1,18 @@
+<div class="header" *ngIf="status$ | async as status">
+  <app-score @fade *ngIf="status !== 'settings'" />
+  <app-settings
+    @fade
+    [time]="time$ | async"
+    (gameStarted)="gameStarted()"
+    (timeChanged)="updateTime($event)"
+    *ngIf="status === 'settings'"
+  ></app-settings>
+</div>
+
+<ng-container *ngIf="board$ | async as board">
+  <app-board
+    [cells]="board.cells"
+    [contestedCell]="board.contested"
+    (cellOccupied)="cellClicked()"
+  />
+</ng-container>

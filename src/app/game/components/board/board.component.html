@@ -1,0 +1,6 @@
+<app-cell
+  *ngFor="let cell of cells; trackBy: trackCell"
+  (click)="onCellClicked(cell.id)"
+  [contested]="cell.id === contestedCell"
+  [cell]="cell"
+></app-cell>

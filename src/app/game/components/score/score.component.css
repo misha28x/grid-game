@@ -1,0 +1,58 @@
+:host {
+  --score-size: 240px;
+  --timer-size: clamp(120px, 50%, 160px);
+
+  display: grid;
+  grid-template-columns: 1fr var(--timer-size) 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spasing-s);
+}
+
+.score-box {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 5rem;
+  padding: var(--spacing);
+  background: var(--white);
+  border: var(--control-border);
+  border-radius: var(--shape);
+  font-size: clamp(1rem, 2vw, var(--main-fz));
+}
+
+.score-box > * {
+  line-height: 1;
+}
+
+.score {
+  font-size: 1.5em;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: var(--white);
+  border: var(--control-border);
+  border-radius: var(--shape);
+  height: calc(var(--timer-size) - 1rem);
+}
+
+.timer .time-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.timer .time {
+  font-size: var(--xl-fz);
+}
+
+.timer .metric {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: var(--l-fz);
+}

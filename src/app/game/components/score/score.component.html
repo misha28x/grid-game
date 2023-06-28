@@ -1,0 +1,20 @@
+<ng-container *ngIf="score$ | async as score">
+  <app-card class="score-box player-score">
+    <span>Player</span> <span class="score">{{ score.player }}</span>
+  </app-card>
+
+  <app-card class="timer">
+    <div *ngIf="{ time: timer$ | async } as timer" class="time-wrapper">
+      <span class="time">{{ timer.time | timeValue }}</span>
+      <span class="metric">{{ timer.time | timeMetric }}</span>
+    </div>
+  </app-card>
+
+  <app-card class="score-box computer-score">
+    <span class="score">
+      {{ score.computer }}
+    </span>
+
+    <span>Computer</span>
+  </app-card>
+</ng-container>

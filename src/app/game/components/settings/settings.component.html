@@ -1,0 +1,34 @@
+<app-card>
+  <h3 class="title">Grid game</h3>
+
+  <div class="content">
+    <div class="text-field">
+      <label for="turn-time">Time to react (ms)</label>
+      <div class="input-wrapper">
+        <input
+          #input
+          (ngModelChange)="updateTime($event)"
+          [(ngModel)]="timeToReact"
+          (blur)="updateTime(input.valueAsNumber)"
+          id="turn-time"
+          type="number"
+          min="200"
+          max="10000"
+        />
+
+        <div class="icons">
+          <button (click)="increase()" class="icon-button">
+            <app-icon key="chevron-up" [size]="16" />
+          </button>
+          <button (click)="decrease()" class="icon-button">
+            <app-icon key="chevron-down" [size]="16" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button (click)="gameStarted.emit()" class="start-btn" app-button>
+      Start
+    </button>
+  </div>
+</app-card>

@@ -1,0 +1,15 @@
+:host {
+  --size: clamp(35px, 5vw, 60px);
+
+  display: grid;
+  grid-template-columns: repeat(10, var(--size));
+  grid-template-rows: repeat(10, var(--size));
+  grid-gap: var(--spasing-xs);
+
+  padding: var(--spacing);
+  border: 6px solid var(--border-color);
+  border-radius: var(--spacing);
+  background: var(--white);
+
+  width: fit-content;
+}

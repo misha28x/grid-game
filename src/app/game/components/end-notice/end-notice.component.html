@@ -1,0 +1,13 @@
+<app-card class="card">
+  <h4 class="title">Game ended</h4>
+
+  <p class="message">
+    <span class="winner">{{ data.winner }}</span> has won. <br />
+    <span>With score {{ score }}</span>
+  </p>
+
+  <button (click)="playAgain()" app-button>Play again</button>
+  <button (click)="goToSettings()" app-button color="red">
+    Go to settings
+  </button>
+</app-card>

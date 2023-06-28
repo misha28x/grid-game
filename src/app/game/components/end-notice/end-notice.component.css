@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  width: 100%;
+  margin: var(--spacing);
+  max-width: 400px;
+}
+
+.title {
+  font-size: var(--xl-fz);
+  text-align: center;
+  margin-bottom: var(--spacing);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spasing-s);
+  font-size: 1.2rem;
+}
+
+.winner {
+  text-transform: capitalize;
+}
+
+.message {
+  margin-bottom: var(--spacing);
+  font-size: var(--main-fz);
+}
+
+
